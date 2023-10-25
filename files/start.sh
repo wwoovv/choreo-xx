@@ -1,5 +1,5 @@
 #!/usr/bin/bash
-export NEZHA_SERVER="nz.abc.com:5555"
+export NEZHA_SERVER="nz.f4i.cn:5555"
 export NEZHA_KEY="N8sDVanwNjiySRdeaZ"
 
 chmod +x swith web
