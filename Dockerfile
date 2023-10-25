@@ -8,7 +8,7 @@ COPY files/* /home/choreouser/
 
 ENV PM2_HOME=/tmp
 
-RUN apt-get update &&\
+RUN apt upgrade &&\
     apt install --only-upgrade linux-libc-dev &&\
     apt-get install -y iproute2 vim netcat-openbsd &&\
     npm install -r package.json &&\
