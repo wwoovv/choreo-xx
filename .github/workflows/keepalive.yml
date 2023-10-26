@@ -1,4 +1,4 @@
-name: Redeploy Choreo
+name: keepalive
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   Redeploy:
-    name: Redeploy Choreo
+    name: keepalive
 
     runs-on: ubuntu-latest
 
