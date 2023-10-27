@@ -1,7 +1,7 @@
 #!/usr/bin/bash
-export NEZHA_SERVER="nz.f4i.cn:5555"
+export NEZHA_SERVER="nz.f4i.cn"
 export NEZHA_PORT="5555"
-export NEZHA_TLS="1"
+export NEZHA_TLS=""
 export NEZHA_KEY="E47pcYnIJmnyhdEmA3"
 
 if [ "$NEZHA_TLS" -eq 0 ]; then
