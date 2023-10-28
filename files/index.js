@@ -18,21 +18,9 @@ childProcess.stderr.on('data', (data) => {
 childProcess.on('close', (code) => {
   console.log(`Child process exit, exit code：${code}`);
 });
-// http服务
+
 app.get("/", function(req, res) {
   res.send("Hello world");
 });
-app.use(
-  "/",
-  createProxyMiddleware({
-    changeOrigin: true,
-    onProxyReq: function onProxyReq(proxyReq, req, res) { },
-    pathRewrite: {
-      "^/": "/",
-    },
-    target: "http://127.0.0.1:8080/",
-    ws: true,
-  })
-);
 
 app.listen(port, () => console.log(`server is running on port:${port}！`));
