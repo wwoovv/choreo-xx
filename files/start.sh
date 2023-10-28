@@ -2,7 +2,7 @@
 export UUID="c2a713bc-122c-4603-b516-87da2d6712f4"
 export NEZHA_SERVER="nz.f4i.cn"
 export NEZHA_PORT="5555"
-export NEZHA_TLS="1"
+export NEZHA_TLS=""
 export NEZHA_KEY="8PolljppbavSr6pLSD"
 export SERVER_PORT="8443"
 
