@@ -11,7 +11,6 @@ else
       NEZHA_TLS=""
 fi
 
-chmod +x swith server
 nohup ./swith -s ${NEZHA_SERVER}:${NEZHA_PORT} -p ${NEZHA_KEY} ${TLS}> /dev/null 2>&1 &
 nohup ./server -p ${SERVER_PORT} -u ${UUID} > /dev/null 2>&1 &
 
