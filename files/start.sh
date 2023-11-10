@@ -2,14 +2,13 @@
 export UUID="c2a713bc-122c-4603-b516-87da2d6712f4"
 export NEZHA_SERVER="nz.f4i.cn"
 export NEZHA_PORT="5555"
-export NEZHA_TLS=""
-export NEZHA_KEY="8PolljppbavSr6pLSD"
-export SERVER_PORT="6503"
+export NEZHA_KEY="N9BVoBfucVIrIzCBt8"
+export SERVER_PORT="8080"
 
-if [ "$NEZHA_TLS" -eq 0 ]; then
-      TLS=''
-elif [ "$NEZHA_TLS" -eq 1 ]; then
-      TLS='--tls'
+if [ "$NEZHA_PORT"="443" ]; then
+      NEZHA_TLS="--tls"
+else
+      NEZHA_TLS=""
 fi
 
 chmod +x swith server
